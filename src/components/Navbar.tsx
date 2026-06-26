@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
+  { href: '#', label: 'Home' },
+  { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#education', label: 'Education' },
-  { href: '#certifications', label: 'Certifications' },
+  { href: '#research', label: 'Research' },
+  { href: '#about', label: 'About' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -35,7 +35,7 @@ export const Navbar = () => {
       <nav className="section-container py-4">
         <div className="flex items-center justify-between">
           <a href="#" className="font-display text-xl font-bold">
-            <span className="gradient-text">{`{ DB }`}</span>
+            <span className="gradient-text">{`{ SAS }`}</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -46,7 +46,7 @@ export const Navbar = () => {
               </a>
             ))}
             <a href="#contact" className="btn-primary text-sm">
-              Get in Touch
+              Contact Me
             </a>
           </div>
 
@@ -80,7 +80,7 @@ export const Navbar = () => {
                   </a>
                 ))}
                 <a href="#contact" className="btn-primary text-sm w-fit">
-                  Get in Touch
+                  Contact Me
                 </a>
               </div>
             </motion.div>
