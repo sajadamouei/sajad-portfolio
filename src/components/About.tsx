@@ -1,38 +1,37 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+import { Brain, Code2, Database, Eye, Server, Users } from 'lucide-react';
 import { useRef } from 'react';
-import { TrendingUp, Brain, Code2, Trophy, Zap, Users } from 'lucide-react';
 
 const highlights = [
   {
-    icon: TrendingUp,
-    title: 'Data Analytics',
-    description: 'Transforming raw data into actionable insights through EDA, statistical modeling, and visualization.',
+    icon: Brain,
+    title: 'LLM Systems',
+    description: 'Designing practical LLM workflows with retrieval, prompting, evaluation, and guardrails.',
   },
   {
-    icon: Brain,
-    title: 'Machine Learning',
-    description: 'Building predictive models, ML pipelines, and deploying intelligent systems.',
+    icon: Database,
+    title: 'RAG Engineering',
+    description: 'Building retrieval pipelines around clean data, embeddings, vector search, and measurable answer quality.',
   },
   {
     icon: Code2,
-    title: 'Clean Code',
-    description: 'Writing maintainable, scalable code that stands the test of time',
+    title: 'Agentic AI',
+    description: 'Creating tool-using AI workflows that connect models with APIs, business logic, and human oversight.',
   },
   {
-    icon: Trophy,
-    title: 'Problem Solver',
-    description: 'Breaking down complex problems into scalable, efficient solutions.',
+    icon: Eye,
+    title: 'Computer Vision',
+    description: 'Applying deep learning and vision models to image-based AI problems.',
   },
   {
-    icon: Zap,
-    title: 'AI Agent Developer',
-    description: 'Designing and deploying AI agents & automations using n8n and RAG workflows to connect knowledge, LLMs, and business systems for automated decisioning.',
+    icon: Server,
+    title: 'Production Backend',
+    description: 'Turning AI capabilities into API-driven services with FastAPI, Docker, cloud deployment, and monitoring.',
   },
   {
     icon: Users,
-    title: 'Collaboration',
-    description: 'Working effectively with cross-functional teams to deliver exceptional results',
+    title: 'Product Thinking',
+    description: 'Starting from user needs and operational constraints so AI systems solve the right problem.',
   },
 ];
 
@@ -53,12 +52,11 @@ export const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Crafting data-driven solutions & intelligent systems
+            AI engineer focused on reliable systems, practical model integration, and production readiness.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Bio */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -68,15 +66,14 @@ export const About = () => {
             <h3 className="font-display text-xl font-semibold mb-4 gradient-text">Background</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                With over 4 years of experience in <span className="text-foreground font-medium">Data Science and Data Analytics</span>, my career has been centered around turning data into clarity, intelligence, and real business value. I’ve worked across the full data lifecycle—exploring messy datasets, building ML models, creating dashboards, and developing automation systems that help teams work smarter. Over time, this naturally led me into <span className="text-primary font-medium">AI Agent development</span>, where I now build n8n workflows and RAG-powered assistants that combine domain knowledge with the capabilities of modern LLMs. For me, the most rewarding projects are the ones where analytics and AI come together to make someone’s work easier, faster, or more informed.
+                I am Sajad Amouei Sheshkal, an Oslo-based PhD in AI and AI Engineer specializing in LLMs, RAG, Agentic AI, and Computer Vision. My work is centered on building AI systems that move beyond demos and become reliable software products.
               </p>
               <p>
-                What motivates me is solving problems that don’t have obvious answers. <span className="text-primary font-medium">Competitive programming</span> shaped the way I think—break the challenge down, explore patterns, and build solutions that are both simple and scalable. Whether I’m designing a data pipeline, optimizing a model, or creating an AI-driven automation, I aim to deliver tools that feel reliable, intuitive, and genuinely helpful. I’m driven by continuous learning, practical impact, and the belief that well-designed data systems can meaningfully improve how people and teams make decisions.
+                I care about the full engineering path: understanding the user problem, designing the architecture, building retrieval and model pipelines, evaluating behavior, and deploying systems that can improve through feedback. Additional verified bio details, employers, publications, and project outcomes can be added here as they are finalized.
               </p>
             </div>
           </motion.div>
 
-          {/* Highlights Grid */}
           <div className="grid sm:grid-cols-2 gap-4">
             {highlights.map((item, index) => (
               <motion.div

@@ -1,27 +1,25 @@
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
+import { CredibilityStrip } from '@/components/CredibilityStrip';
 import { About } from '@/components/About';
 import { Skills } from '@/components/Skills';
 import { Projects } from '@/components/Projects';
+import { BuildProcess } from '@/components/BuildProcess';
 import { Experience } from '@/components/Experience';
 import { Education } from '@/components/Education';
-import { Certifications } from '@/components/Certifications';
+import { Research } from '@/components/Research';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { ChevronRight } from 'lucide-react';
+import { useEffect } from 'react';
 
 const Index = () => {
-  const [showAllCertifications, setShowAllCertifications] = useState(false);
-
   useEffect(() => {
-    document.title = 'Dinesh Barri | Data Analyst & Data Scientist Portfolio';
+    document.title = 'Sajad Amouei Sheshkal | AI Engineer Portfolio';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content',
-        'Portfolio of Dinesh Barri - Data Analyst, Data Scientist, and Codeforces Master based in Dublin, Ireland. Expertise in Python, SQL, Machine Learning, Tableau, Power BI, and competitive programming.'
+        'Portfolio of Sajad Amouei Sheshkal, an Oslo-based PhD in AI and AI Engineer specializing in LLMs, RAG, Agentic AI, and Computer Vision.'
       );
     }
   }, []);
@@ -31,32 +29,14 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Skills />
-        <Experience />
+        <CredibilityStrip />
         <Projects />
+        <Skills />
+        <BuildProcess />
+        <Experience />
+        <Research />
         <Education />
-
-        {showAllCertifications ? (
-          <Certifications />
-        ) : (
-          <>
-            <Certifications limit={6} />
-            <div className="text-center pb-12">
-              <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                onClick={() => setShowAllCertifications(true)}
-                className="btn-primary"
-              >
-                View All Certifications
-                <ChevronRight size={18} />
-              </motion.button>
-            </div>
-          </>
-        )}
-
+        <About />
         <Contact />
       </main>
       <Footer />

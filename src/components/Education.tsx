@@ -1,39 +1,34 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+import { Calendar, GraduationCap, MapPin } from 'lucide-react';
 import { useRef } from 'react';
-import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 const educationData = [
   {
-    degree: 'MS in Data Science',
-    institution: 'Dublin Business School',
-    location: 'Dublin, Ireland',
-    period: 'Sep 2023 - Sep 2024',
-    // grade: 'Distinction', // Grade removed as per instruction
-    logo: 'DBS',
-    description: 'Comprehensive program covering machine learning, statistical analysis, data visualization, and applied data science methodologies.',
+    degree: 'PhD in AI',
+    institution: 'Institution to add',
+    location: 'Oslo, Norway / location to add',
+    period: 'Dates to add',
+    logo: 'PhD',
+    description: 'Verified PhD research summary to add, including the AI focus area and thesis direction.',
     learnings: [
-      'Advanced machine learning and predictive modeling',
-      'Statistical analysis and hypothesis testing',
-      'Data visualization and storytelling with Tableau and Power BI',
-      'Big data processing and cloud computing'
-    ]
+      'Research focus to add',
+      'Methods, datasets, or systems to add',
+      'Publication or dissertation details to add',
+    ],
   },
   {
-    degree: 'Bachelor of Technology - BTech, Computer Science',
-    institution: 'Gayatri Vidya Parishad College of Engineering (Autonomous)',
-    location: 'India',
-    period: '2015 - 2019',
-    // grade: '8.4/10', // Grade removed as per instruction
-    logo: 'GVP',
-    description: 'Strong foundation in computer science fundamentals and software development.',
+    degree: 'Previous degree to add',
+    institution: 'Institution to add',
+    location: 'Location to add',
+    period: 'Dates to add',
+    logo: 'EDU',
+    description: 'Verified degree details to add.',
     learnings: [
-      'Strong foundations in data structures, algorithms, OS, DBMS',
-      'Hands-on software development experience',
-      'Object-oriented programming & application building',
-      'Problem-solving and algorithmic thinking'
-    ]
-  }
+      'Relevant coursework or specialization to add',
+      'AI, software engineering, or mathematics foundation to add',
+      'Academic project or thesis detail to add',
+    ],
+  },
 ];
 
 export const Education = () => {
@@ -53,14 +48,12 @@ export const Education = () => {
             <span className="gradient-text">Education</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Academic foundation and continuous learning
+            Academic background and verified AI research training.
           </p>
         </motion.div>
 
         <div className="w-full flex flex-col items-center justify-center">
-          <div
-            className="flex flex-col gap-8 md:flex-row md:gap-8 w-full justify-center items-stretch"
-          >
+          <div className="flex flex-col gap-8 md:flex-row md:gap-8 w-full justify-center items-stretch">
             {educationData.map((edu, index) => (
               <motion.div
                 key={edu.degree}
@@ -72,7 +65,7 @@ export const Education = () => {
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="font-display font-bold text-xl gradient-text">{edu.logo}</span>
+                    <span className="font-display font-bold text-lg gradient-text">{edu.logo}</span>
                   </div>
                   <div>
                     <h3 className="font-display font-bold text-lg md:text-xl mb-1 text-left group-hover:text-primary transition-colors">
@@ -97,11 +90,11 @@ export const Education = () => {
                   {edu.description}
                 </p>
                 <div className="flex-1 flex flex-col justify-end">
-                  <p className="text-sm font-semibold text-foreground mb-1">Key Learnings:</p>
+                  <p className="text-sm font-semibold text-foreground mb-2">Details to complete:</p>
                   <ul className="space-y-2 mb-2">
-                    {edu.learnings.map((learning, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <span className="text-primary mt-1">▹</span>
+                    {edu.learnings.map((learning) => (
+                      <li key={learning} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2 shrink-0" />
                         <span>{learning}</span>
                       </li>
                     ))}

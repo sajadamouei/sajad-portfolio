@@ -4,32 +4,24 @@ import { useRef } from 'react';
 
 const skillCategories = [
   {
-    title: 'Programming & Analytics',
-    skills: ['Python', 'Java', 'C++', 'C', 'JavaScript', 'TypeScript', 'R', 'SQL', 'Pandas', 'NumPy', 'Scikit-learn', 'SciPy', 'Statsmodels'],
+    title: 'LLM & Agentic AI',
+    skills: ['LLMs', 'RAG', 'Agents', 'Prompt Engineering', 'Embeddings', 'Vector Search', 'Evaluation'],
   },
   {
-    title: 'AI Agents & Intelligent Automation',
-    skills: ['LLM Integrations', 'n8n Agent Development', 'RAG Pipelines', 'AI Automation', 'Knowledge Base Engineering'],
+    title: 'Backend & Cloud',
+    skills: ['FastAPI', 'Docker', 'Azure', 'REST APIs', 'Nginx'],
   },
   {
-    title: 'Data Visualization & BI',
-    skills: ['Tableau', 'Power BI', 'Matplotlib', 'Seaborn', 'Plotly', 'Looker Studio', 'Excel Pivot Tables'],
+    title: 'ML / Deep Learning',
+    skills: ['PyTorch', 'Keras', 'Scikit-learn', 'XGBoost', 'Computer Vision'],
   },
   {
-    title: 'Machine Learning & AI',
-    skills: ['Supervised ML', 'Unsupervised ML', 'Regression', 'Classification', 'Clustering', 'NLP', 'Deep Learning', 'PyTorch'],
+    title: 'Data',
+    skills: ['SQL', 'PostgreSQL', 'FAISS', 'Pandas', 'NumPy'],
   },
   {
-    title: 'Databases & Cloud',
-    skills: ['MySQL', 'PostgreSQL', 'SQL Server', 'MongoDB', 'AWS S3', 'AWS EC2', 'Microsoft Azure', 'Google Cloud'],
-  },
-  {
-    title: 'Tools & Platforms',
-    skills: ['Git/GitHub', 'Jupyter', 'VS Code', 'Docker', 'JIRA', 'Confluence', 'Trello', 'MS Visio', 'Lucidchart'],
-  },
-  {
-    title: 'Algorithms & Competitive Programming',
-    skills: ['Dynamic Programming', 'Greedy Algorithms', 'Data Structures', 'Time Complexity', 'Optimization', 'Problem Solving'],
+    title: 'Frontend',
+    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind'],
   },
 ];
 
@@ -47,10 +39,10 @@ export const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            Skills & <span className="gradient-text">Expertise</span>
+            Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Technologies I've worked with in real-world projects and professional environments
+            A focused stack for building LLM, RAG, agentic AI, backend, data, and computer vision systems.
           </p>
         </motion.div>
 
