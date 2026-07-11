@@ -5,31 +5,80 @@ import { useRef, useState } from 'react';
 const experiences = [
   {
     title: 'AI Engineer',
-    company: 'Company / organization to add',
-    period: 'Dates to add',
-    location: 'Oslo, Norway / Remote to add',
+    company: 'Min Sone AS',
+    period: 'Aug 2025 – Present',
+    location: 'Oslo, Norway',
     description:
-      'Role summary to add. Highlight verified work across LLM applications, RAG systems, agentic AI, backend APIs, deployment, and model evaluation.',
+      'Building applied AI products and client workflows across LLM/RAG systems, generative AI, backend APIs, and cloud deployment.',
     achievements: [
-      'Verified project achievement to add.',
-      'Verified production system responsibility to add.',
-      'Verified collaboration or delivery outcome to add.',
+      'Building an LLM-powered course-builder platform that generates branching interactive training flows from user prompts using Python, TypeScript/Next.js, React, Tailwind CSS, Docker, Nginx, and Azure.',
+      'Identified and implemented a more cost-efficient safety-training workflow for an electrical-industry client by combining generative video with interactive e-learning tools, then turned the validated workflow into a reusable AI course-builder platform.',
+      'Built and deployed a production RAG chatbot for Norwegian legal and workplace documents using Azure OpenAI, FastAPI, FAISS vector search, and Docker, enabling content-grounded answers with source citations through a secure API and embeddable web widget.',
     ],
-    technologies: ['LLMs', 'RAG', 'FastAPI', 'Docker', 'Azure OpenAI', 'Vector Search'],
+    technologies: [
+      'LLMs',
+      'RAG',
+      'Azure OpenAI',
+      'FastAPI',
+      'FAISS',
+      'Docker',
+      'TypeScript',
+      'Next.js',
+      'React',
+      'Tailwind CSS',
+      'Nginx',
+      'Azure',
+    ],
   },
   {
-    title: 'AI / Machine Learning Researcher',
-    company: 'University / research group to add',
-    period: 'Dates to add',
-    location: 'Location to add',
+    title: 'Industrial PhD Researcher',
+    company: 'Simula Metropolitan Center for Digital Engineering',
+    period: 'Jan 2022 – Apr 2025',
+    location: 'Oslo, Norway',
     description:
-      'Research role summary to add. Keep this aligned with verified PhD research, publications, experiments, and applied AI systems.',
+      'Worked on applied AI and machine learning research for biological data and generative computer vision systems, with a focus on reproducible pipelines, model evaluation, and published research.',
     achievements: [
-      'Verified research contribution to add.',
-      'Verified publication, prototype, or experiment to add.',
-      'Verified teaching, supervision, or collaboration detail to add.',
+      'Built a Python/scikit-learn pipeline to classify dry eye disease from high-dimensional tear-film metabolomics data, comparing LR, XGBoost, RF, SVM, MLP, and k-NN with cross-validation and hyperparameter tuning.',
+      'Built an ML-Peaks pipeline for ChIP-Seq peak detection using sliding-window feature extraction, LDA-based feature reduction, and scikit-learn classifiers including SVM, XGBoost, and AdaBoost.',
+      'Optimized audio feature extraction for real-time talking portrait synthesis by integrating Whisper-Tiny with RAD-NeRF and ER-NeRF, reducing audio feature extraction latency while preserving lip-sync and rendering quality.',
     ],
-    technologies: ['PyTorch', 'Computer Vision', 'Deep Learning', 'Evaluation', 'Python'],
+    technologies: [
+      'Python',
+      'scikit-learn',
+      'XGBoost',
+      'SVM',
+      'AdaBoost',
+      'LDA',
+      'Whisper-Tiny',
+      'RAD-NeRF',
+      'ER-NeRF',
+      'Model Evaluation',
+      'Bioinformatics',
+    ],
+  },
+  {
+    title: 'Research Assistant',
+    company: 'University of Tehran',
+    period: 'Feb 2021 – Dec 2021',
+    location: 'Tehran, Iran',
+    description:
+      'Developed deep learning and computer vision research pipelines for medical image segmentation and person re-identification.',
+    achievements: [
+      'Developed a PyTorch-based SinGAN-Seg pipeline for medical image segmentation, generating synthetic polyp images and corresponding masks from single annotated examples to improve training under limited-data conditions.',
+      'Developed and evaluated a Keras-based person re-identification research pipeline using a Siamese CNN architecture, EfficientNet transfer learning, pairwise verification loss, and CMC evaluation on the CUHK01 dataset.',
+      'Connected model implementation, experiment design, and evaluation through code and paper-based research outputs.',
+    ],
+    technologies: [
+      'PyTorch',
+      'Keras',
+      'Computer Vision',
+      'Medical Imaging',
+      'Segmentation',
+      'Siamese CNN',
+      'EfficientNet',
+      'CMC Evaluation',
+      'Deep Learning',
+    ],
   },
 ];
 
@@ -59,7 +108,7 @@ export const Experience = () => {
             Professional <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Verified AI engineering and research roles can be added here without overstating employers, dates, or outcomes.
+            A timeline of my AI engineering, applied ML research, and computer vision work across industry and academic environments.
           </p>
         </motion.div>
 
@@ -127,7 +176,7 @@ export const Experience = () => {
                         onClick={() => toggleCard(index)}
                         className="flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors group"
                       >
-                        {isExpanded ? 'Show Less' : 'Details to Complete'}
+                        {isExpanded ? 'Show Less' : 'View Details'}
                         <ChevronDown
                           className={`w-4 h-4 transition-transform duration-300 ${
                             isExpanded ? 'rotate-180' : 'group-hover:translate-y-0.5'
@@ -147,7 +196,7 @@ export const Experience = () => {
                           <div className="px-6 md:px-8 pb-8 pt-0 space-y-6 border-t border-border/50 mt-2">
                             <div className="pt-6">
                               <h5 className="text-sm font-semibold text-foreground mb-3">
-                                Verified highlights to add
+                                Verified highlights
                               </h5>
                               <ul className="space-y-2">
                                 {exp.achievements.map((achievement) => (

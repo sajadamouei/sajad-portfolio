@@ -5,28 +5,33 @@ import { useRef } from 'react';
 const buildSteps = [
   {
     icon: ClipboardCheck,
-    title: 'Understand the problem',
-    description: 'Clarify the business goal, users, constraints, and success criteria before choosing a model or architecture.',
+    title: 'Understand the real problem',
+    description:
+      'I start by clarifying the goal, users, constraints, data sources, and success criteria. Before choosing a model or architecture, I want to understand what the system actually needs to solve.',
   },
   {
     icon: BrainCircuit,
     title: 'Design the AI workflow',
-    description: 'Map the LLM, retrieval, agent, model, API, and human review boundaries into a maintainable system design.',
+    description:
+      'I map how the AI system should work end to end, including LLM prompts, retrieval, agents, model logic, APIs, user interaction, and human review where needed.',
   },
   {
     icon: GitBranch,
     title: 'Build reliable pipelines',
-    description: 'Create data, retrieval, evaluation, and model pipelines that are observable, testable, and easy to iterate.',
+    description:
+      'I focus on building clear and testable pipelines for data processing, retrieval, model integration, evaluation, and backend services, so the system is easier to debug and improve.',
   },
   {
     icon: Gauge,
-    title: 'Evaluate tradeoffs',
-    description: 'Measure quality, latency, cost, and failure cases so the system behaves well beyond the happy path.',
+    title: 'Evaluate behavior and tradeoffs',
+    description:
+      'I look beyond the happy path by testing quality, latency, cost, failure cases, and edge cases. For LLM and RAG systems, I also care about grounding, source quality, and answer reliability.',
   },
   {
     icon: Rocket,
-    title: 'Deploy and improve',
-    description: 'Ship with feedback loops, monitoring, and practical iteration so production behavior keeps getting better.',
+    title: 'Deploy, learn, and improve',
+    description:
+      'I aim to turn AI work into usable products through APIs, cloud deployment, monitoring, and feedback loops. The goal is not just a demo, but a system that can keep improving in real use.',
   },
 ];
 
@@ -47,7 +52,7 @@ export const BuildProcess = () => {
             How I Build <span className="gradient-text">AI Systems</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A practical engineering workflow for turning AI ideas into reliable, production-ready systems.
+            My approach is practical: start with the real problem, design the right AI workflow, build testable pipelines, evaluate behavior, and deploy systems that can improve through feedback.
           </p>
         </motion.div>
 
