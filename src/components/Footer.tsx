@@ -1,9 +1,15 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, GraduationCap, Linkedin, Mail } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Linkedin, href: '#contact', label: 'LinkedIn URL to add' },
-  { icon: Github, href: '#contact', label: 'GitHub URL to add' },
-  { icon: Mail, href: '#contact', label: 'Email address to add' },
+  { icon: Github, href: 'https://github.com/sajadamouei', label: 'GitHub profile', external: true },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/sheshkal/', label: 'LinkedIn profile', external: true },
+  {
+    icon: GraduationCap,
+    href: 'https://scholar.google.com/citations?user=3S5ZwukAAAAJ&hl=en&oi=ao',
+    label: 'Google Scholar profile',
+    external: true,
+  },
+  { icon: Mail, href: 'mailto:sajad.amouei@gmail.com', label: 'Email Sajad' },
 ];
 
 export const Footer = () => {
@@ -12,8 +18,8 @@ export const Footer = () => {
       <div className="section-container">
         <div className="flex flex-col items-center">
           <a href="#" className="font-display text-2xl font-bold mb-6">
-            <span className="gradient-text">Sajad Amouei</span>
-            <span className="text-foreground"> Sheshkal</span>
+            <span className="text-foreground">Sajad</span>{' '}
+            <span className="gradient-text">Amouei Sheshkal</span>
           </a>
 
           <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -23,6 +29,9 @@ export const Footer = () => {
                 href={link.href}
                 className="social-icon"
                 title={link.label}
+                aria-label={link.label}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
               >
                 <link.icon size={18} />
               </a>
@@ -40,7 +49,7 @@ export const Footer = () => {
           </nav>
 
           <div className="text-center text-sm text-muted-foreground">
-            <p>Copyright {new Date().getFullYear()} Sajad Amouei Sheshkal. All rights reserved.</p>
+            <p>Copyright 2026 Sajad Amouei Sheshkal. All rights reserved.</p>
             <p className="mt-1">AI Engineer | LLMs | RAG | Agentic AI | Computer Vision</p>
           </div>
         </div>

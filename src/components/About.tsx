@@ -6,32 +6,38 @@ const highlights = [
   {
     icon: Brain,
     title: 'LLM Systems',
-    description: 'Designing practical LLM workflows with retrieval, prompting, evaluation, and guardrails.',
+    description:
+      'Building practical LLM applications that combine prompts, retrieval, APIs, evaluation, and user-facing workflows.',
   },
   {
     icon: Database,
     title: 'RAG Engineering',
-    description: 'Building retrieval pipelines around clean data, embeddings, vector search, and measurable answer quality.',
+    description:
+      'Designing retrieval pipelines with clean data, embeddings, vector search, source grounding, and answer quality in mind.',
   },
   {
     icon: Code2,
     title: 'Agentic AI',
-    description: 'Creating tool-using AI workflows that connect models with APIs, business logic, and human oversight.',
+    description:
+      'Creating AI workflows that connect models with tools, business logic, APIs, and human review where needed.',
   },
   {
     icon: Eye,
     title: 'Computer Vision',
-    description: 'Applying deep learning and vision models to image-based AI problems.',
+    description:
+      'Applying deep learning to image-based problems, including medical imaging, person re-identification, and generative visual systems.',
   },
   {
     icon: Server,
     title: 'Production Backend',
-    description: 'Turning AI capabilities into API-driven services with FastAPI, Docker, cloud deployment, and monitoring.',
+    description:
+      'Turning AI capabilities into API-driven services using FastAPI, Docker, Azure, and deployment-ready architecture.',
   },
   {
     icon: Users,
-    title: 'Product Thinking',
-    description: 'Starting from user needs and operational constraints so AI systems solve the right problem.',
+    title: 'Research Mindset',
+    description:
+      'Bringing careful evaluation, experiment design, and model understanding from research into practical AI engineering.',
   },
 ];
 
@@ -52,7 +58,7 @@ export const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            AI engineer focused on reliable systems, practical model integration, and production readiness.
+            AI Engineer focused on turning research ideas, LLM workflows, and applied ML models into reliable systems that people can actually use.
           </p>
         </motion.div>
 
@@ -66,10 +72,13 @@ export const About = () => {
             <h3 className="font-display text-xl font-semibold mb-4 gradient-text">Background</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I am Sajad Amouei Sheshkal, an Oslo-based PhD in AI and AI Engineer specializing in LLMs, RAG, Agentic AI, and Computer Vision. My work is centered on building AI systems that move beyond demos and become reliable software products.
+                I am Sajad Amouei Sheshkal, an Oslo-based AI Engineer with industrial PhD research experience in applied machine learning, deep learning, and computer vision.
               </p>
               <p>
-                I care about the full engineering path: understanding the user problem, designing the architecture, building retrieval and model pipelines, evaluating behavior, and deploying systems that can improve through feedback. Additional verified bio details, employers, publications, and project outcomes can be added here as they are finalized.
+                My background started in research, where I worked on computer vision, biomedical AI, generative models, and machine learning pipelines. More recently, my focus has moved toward production-oriented AI systems, especially LLM applications, RAG systems, agentic workflows, APIs, and cloud deployment.
+              </p>
+              <p>
+                I care about building AI systems that are useful beyond demos: systems with clear problem understanding, reliable retrieval or model behavior, practical evaluation, and a path toward real users.
               </p>
             </div>
           </motion.div>
