@@ -4,29 +4,59 @@ import { useRef } from 'react';
 
 const educationData = [
   {
-    degree: 'PhD in AI',
-    institution: 'Institution to add',
-    location: 'Oslo, Norway / location to add',
-    period: 'Dates to add',
+    degree: 'Industrial PhD Research in AI for Biological Data',
+    institution: 'Oslo Metropolitan University',
+    location: 'Oslo, Norway',
+    period: 'Jan 2022 – Apr 2025',
     logo: 'PhD',
-    description: 'Verified PhD research summary to add, including the AI focus area and thesis direction.',
+    description:
+      'Industrial PhD research focused on artificial intelligence for biological data, applied machine learning, model evaluation, and research pipelines.',
     learnings: [
-      'Research focus to add',
-      'Methods, datasets, or systems to add',
-      'Publication or dissertation details to add',
+      'Applied ML research for biological and biomedical data',
+      'Machine learning pipelines for metabolomics and ChIP-Seq analysis',
+      'Research work connected to published papers and open-source code',
     ],
   },
   {
-    degree: 'Previous degree to add',
-    institution: 'Institution to add',
-    location: 'Location to add',
-    period: 'Dates to add',
-    logo: 'EDU',
-    description: 'Verified degree details to add.',
+    degree: 'MSc in Deep Learning for Person Re-Identification',
+    institution: 'University of Tehran',
+    location: 'Tehran, Iran',
+    period: 'Jan 2016 – Jan 2020',
+    logo: 'MSc',
+    description:
+      'Master’s research focused on deep learning for person re-identification using CNN-based architectures, transfer learning, and evaluation on benchmark datasets.',
     learnings: [
-      'Relevant coursework or specialization to add',
-      'AI, software engineering, or mathematics foundation to add',
-      'Academic project or thesis detail to add',
+      'Siamese CNN and EfficientNet-based person re-identification',
+      'Pairwise verification learning and CMC evaluation',
+      'Computer vision and deep learning research',
+    ],
+  },
+  {
+    degree: 'Bachelor’s Degree in Computer Software Engineering',
+    institution: 'Mehrastan University',
+    location: 'Iran',
+    period: 'Feb 2012 – Mar 2014',
+    logo: 'BSc',
+    description:
+      'Undergraduate education in software engineering, programming, and computer systems.',
+    learnings: [
+      'Software engineering foundations',
+      'Programming and system design fundamentals',
+      'Background preparation for later AI and machine learning work',
+    ],
+  },
+  {
+    degree: 'Associate’s Degree in Computer Engineering Technology',
+    institution: 'Technical and Vocational University',
+    location: 'Iran',
+    period: 'Sep 2008 – Apr 2011',
+    logo: 'AS',
+    description:
+      'Early academic training in computer engineering technology, programming, and technical computing.',
+    learnings: [
+      'Computer engineering fundamentals',
+      'Programming and technical problem solving',
+      'Foundation for later software engineering and AI studies',
     ],
   },
 ];
@@ -48,19 +78,21 @@ export const Education = () => {
             <span className="gradient-text">Education</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Academic background and verified AI research training.
+            Academic background in AI, deep learning, software engineering, and computer engineering.
           </p>
         </motion.div>
 
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="flex flex-col gap-8 md:flex-row md:gap-8 w-full justify-center items-stretch">
+          <div className="grid w-full max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
             {educationData.map((edu, index) => (
               <motion.div
                 key={edu.degree}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="flex-1 min-w-[260px] max-w-md bg-card/70 rounded-2xl shadow-lg hover:shadow-xl border border-border px-6 py-8 flex flex-col md:min-h-[410px] mx-auto md:mx-0 backdrop-blur-[2px] transition-all duration-300"
+                className={`bg-card/70 rounded-2xl shadow-lg hover:shadow-xl border border-border px-6 flex flex-col mx-auto md:mx-0 backdrop-blur-[2px] transition-all duration-300 ${
+                  index < 2 ? 'py-8 md:min-h-[410px]' : 'py-7 md:min-h-[360px]'
+                }`}
                 style={{ boxShadow: '0 8px 32px 0 hsl(var(--card) / 0.25)' }}
               >
                 <div className="flex items-center gap-4 mb-4">
@@ -90,7 +122,7 @@ export const Education = () => {
                   {edu.description}
                 </p>
                 <div className="flex-1 flex flex-col justify-end">
-                  <p className="text-sm font-semibold text-foreground mb-2">Details to complete:</p>
+                  <p className="text-sm font-semibold text-foreground mb-2">Details:</p>
                   <ul className="space-y-2 mb-2">
                     {edu.learnings.map((learning) => (
                       <li key={learning} className="flex items-start gap-2 text-sm text-muted-foreground">
