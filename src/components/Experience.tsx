@@ -6,7 +6,7 @@ const experiences = [
   {
     title: 'AI Engineer',
     company: 'Min Sone AS',
-    period: 'Aug 2025 – Present',
+    period: 'Aug 2025 – Jun 2026',
     location: 'Oslo, Norway',
     description:
       'Building applied AI products and client workflows across LLM/RAG systems, generative AI, backend APIs, and cloud deployment.',
