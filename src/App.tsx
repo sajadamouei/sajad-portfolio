@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { BackToTopButton } from "./components/BackToTopButton";
 import { ScrollProgressBar } from "./components/ScrollProgressBar";
 
 const queryClient = new QueryClient();
@@ -13,6 +14,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <ScrollProgressBar />
+      <BackToTopButton />
       <Toaster />
       <Sonner />
       <BrowserRouter>
