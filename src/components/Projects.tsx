@@ -1,5 +1,5 @@
 import { motion, useInView } from 'framer-motion';
-import { ChevronDown, ChevronUp, ExternalLink, FileText, Github, Globe } from 'lucide-react';
+import { ChevronDown, ChevronUp, CirclePlay, ExternalLink, FileText, Github, Globe } from 'lucide-react';
 import { useMemo, useRef, useState } from 'react';
 
 const categories = [
@@ -27,6 +27,7 @@ type Project = {
   links: {
     github?: string;
     paper?: string;
+    website?: string;
     publicLaunch?: string;
     demo?: string;
   };
@@ -42,7 +43,9 @@ const projects = [
     techStack: ['LLM Apps', 'Agentic Workflows', 'Course Generation', 'Next.js', 'Docker', 'Azure'],
     image: '/images/ai-course-builder.png',
     status: 'In Progress',
-    links: {},
+    links: {
+      website: 'https://www.agocourse.com/',
+    },
   },
   {
     id: 'ai-safety-training-workflow',
@@ -52,7 +55,9 @@ const projects = [
     categories: ['Agentic AI', 'Applied ML'],
     techStack: ['Generative AI', 'E-learning', 'Workflow Design', 'Client Use Case', 'AI Prototyping'],
     image: 'images/ai-safety-training-workflow.png',
-    links: {},
+    links: {
+      demo: 'https://www.youtube.com/watch?v=8cJFxUlBtaM',
+    },
   },
   {
     id: 'production-rag-chatbot',
@@ -148,6 +153,12 @@ const projectLinkOptions = [
     icon: FileText,
   },
   {
+    key: 'website',
+    label: 'Project Website',
+    ariaLabel: 'Visit project website',
+    icon: ExternalLink,
+  },
+  {
     key: 'publicLaunch',
     label: 'Public Launch',
     ariaLabel: 'View public launch',
@@ -155,9 +166,9 @@ const projectLinkOptions = [
   },
   {
     key: 'demo',
-    label: 'Live Demo',
-    ariaLabel: 'View live demo',
-    icon: ExternalLink,
+    label: 'Video Demo',
+    ariaLabel: 'Watch video demo',
+    icon: CirclePlay,
   },
 ] satisfies {
   key: keyof Project['links'];
