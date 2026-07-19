@@ -123,16 +123,17 @@ export const Hero = () => {
               View Projects
               <ArrowDown size={18} className="-rotate-90" />
             </a>
-            <DropdownMenu>
+            <DropdownMenu modal={false}>
               <DropdownMenuTrigger className="btn-secondary flex items-center gap-2">
                 Download CV
                 <Download size={18} />
                 <ChevronDown size={16} />
               </DropdownMenuTrigger>
               <DropdownMenuContent
-                align="start"
+                align="center"
                 sideOffset={10}
-                className="z-[90] bg-background border-border/70 shadow-2xl"
+                collisionPadding={16}
+                className="z-[90] w-48 max-w-[calc(100vw-2rem)] bg-background border-border/70 shadow-2xl"
               >
                 <DropdownMenuItem asChild>
                   <a href="/cv/Sajad-Amouei-Sheshkal-CV-EN.pdf" download>
