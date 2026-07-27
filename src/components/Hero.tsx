@@ -56,7 +56,7 @@ export const Hero = () => {
             className="text-lg sm:text-xl md:text-2xl text-primary font-semibold mb-6 max-w-2xl"
           >
             <TypeWriter
-              words={['AI Engineer', 'Agentic AI Engineer', 'LLM Engineer', 'ML Engineer']}
+              words={['AI/ML Engineer', 'LLM & RAG | Generative AI | Computer Vision']}
             />
           </motion.p>
 
