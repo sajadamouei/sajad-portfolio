@@ -8,7 +8,7 @@ const educationData = [
     institution: 'Oslo Metropolitan University',
     location: 'Oslo, Norway',
     period: 'Jan 2022 – Apr 2025',
-    logo: 'PhD',
+    logo: '/logos/education/oslomet.png',
     description:
       'Industrial PhD research focused on artificial intelligence for biological data, applied machine learning, model evaluation, and research pipelines.',
     learnings: [
@@ -22,7 +22,7 @@ const educationData = [
     institution: 'University of Tehran',
     location: 'Tehran, Iran',
     period: 'Jan 2016 – Jan 2020',
-    logo: 'MSc',
+    logo: '/logos/education/ut.png',
     description:
       'Master’s research focused on deep learning for person re-identification using CNN-based architectures, transfer learning, and evaluation on benchmark datasets.',
     learnings: [
@@ -36,7 +36,7 @@ const educationData = [
     institution: 'Mehrastan University',
     location: 'Iran',
     period: 'Feb 2012 – Mar 2014',
-    logo: 'BSc',
+    logo: '/logos/education/mehrastan.png',
     description:
       'Undergraduate education in software engineering, programming, and computer systems.',
     learnings: [
@@ -50,7 +50,7 @@ const educationData = [
     institution: 'Technical and Vocational University',
     location: 'Iran',
     period: 'Sep 2008 – Apr 2011',
-    logo: 'AS',
+    logo: '/logos/education/kardani.png',
     description:
       'Early academic training in computer engineering technology, programming, and technical computing.',
     learnings: [
@@ -96,8 +96,13 @@ export const Education = () => {
                 style={{ boxShadow: '0 8px 32px 0 hsl(var(--card) / 0.25)' }}
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="font-display font-bold text-lg gradient-text">{edu.logo}</span>
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center shrink-0 overflow-hidden p-2 group-hover:scale-110 transition-transform">
+                    <img
+                      src={edu.logo}
+                      alt={`${edu.institution} logo`}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
                   </div>
                   <div>
                     <h3 className="font-display font-bold text-lg md:text-xl mb-1 text-left group-hover:text-primary transition-colors">

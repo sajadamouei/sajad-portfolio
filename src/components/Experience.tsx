@@ -6,6 +6,7 @@ const experiences = [
   {
     title: 'AI Engineer',
     company: 'Min Sone AS',
+    logo: '/logos/experience/minsone.png',
     period: 'Aug 2025 – Jun 2026',
     location: 'Oslo, Norway',
     description:
@@ -33,6 +34,7 @@ const experiences = [
   {
     title: 'Industrial PhD Researcher',
     company: 'Simula Metropolitan Center for Digital Engineering',
+    logo: '/logos/experience/simulamet.png',
     period: 'Jan 2022 – Apr 2025',
     location: 'Oslo, Norway',
     description:
@@ -59,6 +61,7 @@ const experiences = [
   {
     title: 'Research Assistant',
     company: 'University of Tehran',
+    logo: '/logos/experience/ut.png',
     period: 'Feb 2021 – Dec 2021',
     location: 'Tehran, Iran',
     description:
@@ -140,10 +143,13 @@ export const Experience = () => {
                     <div className="p-6 md:p-8">
                       <div className="flex items-start gap-4 md:gap-6 mb-6">
                         <div className="shrink-0">
-                          <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                            <span className="font-display font-bold text-xl gradient-text">
-                              {index === 0 ? 'AI' : 'R'}
-                            </span>
+                          <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center overflow-hidden p-2">
+                            <img
+                              src={exp.logo}
+                              alt={`${exp.company} logo`}
+                              className="w-full h-full object-contain"
+                              loading="lazy"
+                            />
                           </div>
                         </div>
 

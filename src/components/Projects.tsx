@@ -5,7 +5,7 @@ import { useMemo, useRef, useState } from 'react';
 const categories = [
   'All Projects',
   'LLM & RAG',
-  'Agentic AI',
+  'AI Agents',
   'Computer Vision',
   'Applied ML',
   'APIs & Deployment',
@@ -39,7 +39,7 @@ const projects = [
     title: 'AI Course Builder Platform',
     shortDescription:
       'Building an LLM-powered course-builder platform that generates branching interactive training flows from user prompts. The platform combines prompt-driven content generation, workflow design, frontend integration, and cloud-ready deployment using Python, TypeScript, Next.js, Docker, Nginx, and Azure.',
-    categories: ['Agentic AI', 'LLM & RAG', 'APIs & Deployment'],
+    categories: ['AI Agents', 'LLM & RAG', 'APIs & Deployment'],
     techStack: ['LLM Apps', 'Agentic Workflows', 'Course Generation', 'Next.js', 'Docker', 'Azure'],
     image: '/images/ai-course-builder.png',
     status: 'In Progress',
@@ -52,7 +52,7 @@ const projects = [
     title: 'AI Safety Training Workflow',
     shortDescription:
       'Identified a cost-efficient alternative to custom video/game-based safety training by combining generative video and interactive e-learning tools for a client in the electrical industry, then transformed the validated workflow into a scalable AI course-builder platform.',
-    categories: ['Agentic AI', 'Applied ML'],
+    categories: ['Computer Vision'],
     techStack: ['Generative AI', 'E-learning', 'Workflow Design', 'Client Use Case', 'AI Prototyping'],
     image: 'images/ai-safety-training-workflow.png',
     links: {
