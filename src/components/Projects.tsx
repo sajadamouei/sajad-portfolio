@@ -30,6 +30,7 @@ type Project = {
     website?: string;
     publicLaunch?: string;
     demo?: string;
+    liveDemo?: string;
   };
 };
 
@@ -45,6 +46,20 @@ const projects = [
     status: 'In Progress',
     links: {
       website: 'https://www.agocourse.com/',
+    },
+  },
+  {
+    id: 'propertyops-ai-investigator',
+    title: 'PropertyOps AI Investigator',
+    shortDescription:
+      'Built and deployed a full-stack agentic AI platform for HVAC fault investigation, combining Isolation Forest anomaly detection, FAISS-based RAG, and LangGraph/MCP tool orchestration to analyze sensor data, tenant complaints, and maintenance records. Implemented human-in-the-loop work-order approval, a FastAPI/React interface, automated testing, and CI/CD deployment to Azure Container Apps.',
+    categories: ['AI Agents', 'LLM & RAG', 'Applied ML', 'APIs & Deployment'],
+    techStack: ['LangGraph', 'MCP', 'FAISS RAG', 'Isolation Forest', 'FastAPI', 'Azure Container Apps'],
+    image: '/images/propertyops-ai-investigator.png',
+    links: {
+      github: 'https://github.com/sajadamouei/propertyops-ai-investigator',
+      liveDemo:
+        'https://ca-propertyops-ai.bravemeadow-1c7ef3e7.northeurope.azurecontainerapps.io/operations',
     },
   },
   {
@@ -169,6 +184,12 @@ const projectLinkOptions = [
     label: 'Video Demo',
     ariaLabel: 'Watch video demo',
     icon: CirclePlay,
+  },
+  {
+    key: 'liveDemo',
+    label: 'Live Demo',
+    ariaLabel: 'Visit live demo',
+    icon: ExternalLink,
   },
 ] satisfies {
   key: keyof Project['links'];
