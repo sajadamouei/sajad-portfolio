@@ -275,7 +275,7 @@ export const Contact = () => {
               <h3 className="font-display text-lg font-semibold mb-4">Download CV</h3>
               <div className="grid gap-3 sm:grid-cols-2">
                 <a
-                  href="/cv/Sajad-Amouei-Sheshkal-CV-EN.pdf"
+                  href="/cv/sajad_cv_en.pdf"
                   download
                   className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-border bg-secondary/35 px-4 py-3 text-sm font-medium text-slate-200 transition-colors hover:border-primary/40 hover:bg-secondary/50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary"
                 >
@@ -283,7 +283,7 @@ export const Contact = () => {
                   Download CV English
                 </a>
                 <a
-                  href="/cv/Sajad-Amouei-Sheshkal-CV-NO.pdf"
+                  href="/cv/sajad_cv_no.pdf"
                   download
                   className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-border bg-secondary/35 px-4 py-3 text-sm font-medium text-slate-200 transition-colors hover:border-primary/40 hover:bg-secondary/50"
                 >

@@ -136,12 +136,12 @@ export const Hero = () => {
                 className="z-[90] w-48 max-w-[calc(100vw-2rem)] bg-background border-border/70 shadow-2xl"
               >
                 <DropdownMenuItem asChild>
-                  <a href="/cv/Sajad-Amouei-Sheshkal-CV-EN.pdf" download>
+                  <a href="/cv/sajad_cv_en.pdf" download>
                     English CV
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="/cv/Sajad-Amouei-Sheshkal-CV-NO.pdf" download>
+                  <a href="/cv/sajad_cv_no.pdf" download>
                     Norwegian CV
                   </a>
                 </DropdownMenuItem>
