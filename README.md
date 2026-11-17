@@ -1,40 +1,35 @@
 # Sajad Amouei Sheshkal | AI Engineering Portfolio
 
-This repository contains my personal portfolio website.
+Welcome to the source code of my personal portfolio: **[sajad.no](https://sajad.no)**.
 
-I am Sajad Amouei Sheshkal, an Oslo-based AI Engineer focused on LLM applications, RAG systems, agentic AI workflows, applied machine learning, and computer vision.
+## About Me
 
-The portfolio highlights selected projects from my work across production AI systems, research pipelines, generative AI, backend APIs, cloud deployment, and published research.
+I'm an AI Engineer based in Oslo, Norway, with over four years of experience across applied machine learning, deep learning, computer vision, and AI research.
 
-## Focus areas
+My background includes industrial PhD research and industry projects, with a growing focus on building practical AI applications using LLMs, RAG, AI agents, and cloud technologies.
 
-* AI Engineering
-* LLM Applications
-* Retrieval-Augmented Generation
-* Agentic AI Workflows
-* Applied Machine Learning
-* Computer Vision
-* Backend APIs and Deployment
+This portfolio brings together my engineering projects, professional experience, technical skills, and research publications.
 
-## Tech stack
+## AI & Engineering Skills
 
-* React
-* TypeScript
-* Tailwind CSS
-* Vite
-* FastAPI, Docker, Azure, and AI/ML tools are represented through project work
+- **LLMs & AI Agents:** RAG, LangGraph, LangChain, MCP, FAISS, generative AI
+- **Machine Learning:** PyTorch, Keras, scikit-learn, computer vision, model evaluation
+- **Backend & Cloud:** Python, FastAPI, REST APIs, Docker, Azure, CI/CD
+- **Development:** TypeScript, React, Next.js, SQL, Git
 
-## Links
+## Portfolio Technology
 
-* Portfolio: https://sajad.no/
-* GitHub: https://github.com/sajadamouei
-* LinkedIn: https://www.linkedin.com/in/sheshkal/
-* Google Scholar: https://scholar.google.com/citations?user=3S5ZwukAAAAJ&hl=en&oi=ao
+This website is developed using:
 
-## Contact
+- **Frontend:** React, TypeScript, Vite
+- **UI & Styling:** Tailwind CSS, shadcn/ui, Radix UI
+- **Animations:** Framer Motion
+- **Hosting & Deployment:** Cloudflare Pages with GitHub integration
+- **Contact Form:** Formspree
 
-Email: [sajad.amouei@gmail.com](mailto:sajad.amouei@gmail.com)
+## Connect
 
----
-
-Built as a professional portfolio for AI Engineer, Agentic AI Engineer, LLM Engineer, and ML Engineer opportunities.
+- **Portfolio:** [sajad.no](https://sajad.no)
+- **LinkedIn:** [linkedin.com/in/sheshkal](https://www.linkedin.com/in/sheshkal/)
+- **Google Scholar:** [Research Publications](https://scholar.google.com/citations?user=3S5ZwukAAAAJ)
+- **Email:** [sajad.amouei@gmail.com](mailto:sajad.amouei@gmail.com)
